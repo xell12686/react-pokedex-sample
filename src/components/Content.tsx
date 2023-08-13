@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Card from './Card';
+import { PokemonEntry } from '../types/pokemonTypes';
 
-export default function Content() {
-    return (
-        <main>
-            <section>
-                <p>Content here...</p>
-            </section>
-        </main>
-    )
+interface ContentProps {
+    pokemonData?: PokemonEntry[];
 }
+
+const Content: React.FC<ContentProps> = ({ pokemonData }) => {
+    return (
+        <div>
+            {pokemonData?.map((pokemon) => (
+                <Card key={pokemon.number} {...pokemon} />
+            ))}
+        </div>
+    );
+};
+
+export default Content;
