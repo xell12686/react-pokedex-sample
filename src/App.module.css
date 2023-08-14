@@ -1,5 +1,12 @@
 body {
-  background-color: #3f3f3f;
+  background-color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 header,
@@ -20,9 +27,17 @@ footer p {
   line-height: 1.4;
 }
 
-main {
+.main {
   background: white;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto auto auto;
+}
+
+.autoMargintop {
+  margin-top: auto;
 }
 
 h1 {

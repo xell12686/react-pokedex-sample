@@ -9,5 +9,5 @@ export const getTypeColor = (type: string) => {
     bug: '#9AB100',
   };
 
-  return colors[typeLowerCase] || "black"; // Default to "black" if the type is not found
+  return colors[typeLowerCase] || "black";
 };

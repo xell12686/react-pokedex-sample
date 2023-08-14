@@ -4,6 +4,7 @@
   background-color: #747474;
   border-radius: 8px;
   padding: 5px 15px 15px 15px;
+  box-shadow: 1px 6px 6px -1px rgba(0,0,0,0.29);
   @media (min-width: 768px) {
     max-width: 256px;
     padding: 5px 20px 20px 20px;

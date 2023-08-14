@@ -6,15 +6,20 @@ const useFetchPokemon = (url: string) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
+  const delay = (ms: number) =>
+    new Promise((resolve) => setTimeout(resolve, ms));
+
   useEffect(() => {
-    fetch(url)
-      .then((response) => {
+    Promise.all([
+      fetch(url).then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
         return response.json();
-      })
-      .then((jsonData) => {
+      }),
+      delay(1000),
+    ])
+      .then(([jsonData]) => {
         if (!jsonData.total || !jsonData.entries) {
           throw new Error("Incomplete JSON data");
         }
