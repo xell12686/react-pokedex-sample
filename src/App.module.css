@@ -1,0 +1,49 @@
+body {
+  background-color: #3f3f3f;
+}
+
+header,
+footer {
+  background-color: #3f3f3f;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  @media (min-width: 768px) {
+    padding: 32px;
+  }
+}
+
+footer p {
+  max-width: 505px;
+  display: block;
+  margin: auto;
+  line-height: 1.4;
+}
+
+main {
+  background: white;
+  color: black;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+h2 {
+  color: #3f3f3f;
+  max-width: 430px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 16px;
+  }
+}

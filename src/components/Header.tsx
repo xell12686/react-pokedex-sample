@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
     return (
-        <header className="Header">
+        <header>
             <h1>The Online Pokedex</h1>
         </header>
     )

@@ -1,0 +1,11 @@
+.Content {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (min-width: 768px) {
+    padding: 40px;
+    gap: 40px;
+  }
+}
